@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f5f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.calculator-container {
+    display: flex;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 800px;
+    width: 100%;
+}
+
+.calculator, .results {
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.calculator {
+    flex: 1;
+    background-color: #f9fafc;
+}
+
+.results {
+    flex: 1;
+    background-color: #0e1c28;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.input-prefix, .input-suffix {
+    background-color: #ddd;
+    padding: 10px;
+    border-radius: 8px 0 0 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="number"] {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 0 8px 8px 0;
+    font-size: 16px;
+    color: #333;
+    width: calc(100% - 50px);
+    margin-left: -1px; /* to avoid double borders */
+}
+
+.mortgage-type {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.mortgage-type label {
+    font-weight: normal;
+    color: #555;
+}
+
+button {
+    padding: 12px;
+    background-color: #f7c400;
+    color: #000;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #f8d547;
+}
+
+#monthlyRepayment {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+#totalRepayment {
+    font-size: 18px;
+    color: #f7c400;
+    margin-top: 10px;
+}
+
+.results p {
+    margin: 5px 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}

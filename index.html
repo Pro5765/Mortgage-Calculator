@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mortgage Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <div class="calculator">
+            <h2>Mortgage Calculator</h2>
+            <form id="mortgageForm">
+                <label for="amount">Mortgage Amount</label>
+                <div class="input-group">
+                    <span class="input-prefix">£</span>
+                    <input type="number" id="amount" placeholder="0" min="0" required>
+                </div>
+
+                <label for="term">Mortgage Term</label>
+                <div class="input-group">
+                    <input type="number" id="term" placeholder="years" min="1" required>
+                    <span class="input-suffix">years</span>
+                </div>
+
+                <label for="rate">Interest Rate</label>
+                <div class="input-group">
+                    <input type="number" id="rate" step="0.01" placeholder="0.00" min="0" required>
+                    <span class="input-suffix">%</span>
+                </div>
+
+                <label>Mortgage Type</label>
+                <div class="mortgage-type">
+                    <div>
+                        <input type="radio" id="repayment" name="mortgageType" value="repayment" checked>
+                        <label for="repayment">Repayment</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="interestOnly" name="mortgageType" value="interestOnly">
+                        <label for="interestOnly">Interest Only</label>
+                    </div>
+                </div>
+
+                <button type="submit">Calculate Repayments</button>
+            </form>
+        </div>
+        <div class="results">
+            <h2>Your results</h2>
+            <p id="monthlyRepayment"></p>
+            <p id="totalRepayment"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
