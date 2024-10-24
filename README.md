@@ -12,7 +12,7 @@ This repository contains the code for a simple mortgage calculator web applicati
 **Getting Started:**
 
 1. Clone the repository:
-   [Git Clone](git clone https://github.com/Pro5765/mortgage-calculator.git)
+   [Git Clone](https://github.com/Pro5765/mortgage-calculator.git)
    
 3. Navigate to the project directory:
    cd mortgage-calculator
@@ -27,7 +27,7 @@ This repository contains the code for a simple mortgage calculator web applicati
 -The calculated monthly and total repayments will be displayed in the results section.
 
 **Demo:**
-[Live Demo]()
+[Live Demo](https://pro5765.github.io/Mortgage-Calculator/)
 
 **Technology Stack:**
 
